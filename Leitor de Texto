@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int main( ) {
+
+	char array1[50];
+	char array2[50]; 
+
+	printf("Por favor, digite o primeiro texto: ");
+	scanf( "%s", array1 );
+	fflush(stdin); 
+
+	printf("Por favor, digite o segundo texto: ");
+	scanf( "%s", array2 );
+	fflush(stdin); 
+	
+	int i, x = 0;
+	int z = 0;
+	
+	int a1 = strlen(array1);
+	int a2 = strlen(array2);
+	
+    bool IsCommon;
+    	
+    	for(i = 0; i < a1; i ++){
+    	    for(x = 0; x < a2; x ++){
+    	        
+                if(tolower(array1[i]) == tolower(array2[x])){
+                    IsCommon = true;
+                }
+    	        
+    	    }
+    	    
+    	}
+    	
+    if(IsCommon == true)
+        printf("Existem letras em comum nos dois textos!");
+    else
+    	printf("Não existe letras em comum nos dois textos!");	  
+	    
+	    
+}
