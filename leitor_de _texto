@@ -39,7 +39,7 @@ int main( ) {
     if(IsCommon == true)
         printf("Existem letras em comum nos dois textos!");
     else
-    	printf("Não existe letras em comum nos dois textos!");	  
+    	printf("Não existem letras em comum nos dois textos!");	  
 	    
 	    
 }
